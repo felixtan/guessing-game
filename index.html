@@ -8,31 +8,36 @@
 	</head>
 
 	<body>
-		<h2>Guess the number</h2>
-		<h3>Rules:</h3>
-		<ul id='rules'>
-			<li>The number is between 1-100 inclusive.</li>
-			<li>You have 6 attempts.</li>
-			<li>I'll let you know whether you're getting hot or cold.</li>
-			<li>I'll let you know whether you need to guess higher or lower.</li>
-		</ul>
+		<h2 id='title'>Guess The Number</h2>
+		
+		<div id='rules'>
+			<h3>Rules:</h3>
+			<ul>
+				<li>The number is between 1-100 inclusive.</li>
+				<li>You have 6 attempts.</li>
+				<li>I'll let you know whether you're getting hot or cold.</li>
+				<li>I'll let you know whether you need to guess higher or lower.</li>
+			</ul>
+		</div>
 
-		<!-- TODO: Hot/Cold, Guess higher/lower hints depending on difference between random generated number and guessed number -->
-		<h4 id='status'>(Guess hints go here)</h4>
+		<div id='game'>
+			<!-- TODO: Hot/Cold, Guess higher/lower hints depending on difference between random generated number and guessed number -->
+			<h4 id='status'>(Guess hints go here)</h4>
 
-		<form>
-			<input type='text' placeholder='1-100'>
+			<form>
+				<input type='text' placeholder='1-100'>
 
-			<!-- TODO #1: Pressing the submit button pushes the guessed number to be analyzed by jQuery logic -->
-			<!-- <input type="submit" value="Submit"> 	button vs input?	-->
-			<button type='button'>Submit</button>
-		</form>
+				<!-- TODO #1: Pressing the submit button pushes the guessed number to be analyzed by jQuery logic -->
+				<!-- <input type="submit" value="Submit"> 	button vs input?	-->
+				<button type='button'>Submit</button>
+			</form>
 
-		<!-- TODO: Implement counter for the number of guesses remaining... ranges from 0-6? or 1-6? -->
-		<h4 id='guess-count'>(Guess counter goes here)</h4>
+			<!-- TODO: Implement counter for the number of guesses remaining... ranges from 0-6? or 1-6? -->
+			<h4 id='guess-count'>(Guess counter goes here)</h4>
+		
 
-		<!-- TODO: Make it so that this button says 'Start' at the beginning, and says 'Restart' when the game ends. Pressing 'Start' begins the counter and the game if it's THE VERY FIRST GAME. Pressing 'Restart' begins the counter and the game for ALL CONSEQUENT GAMES -->
-		<button type='button'>Start</button>
-
+			<!-- TODO: Make it so that this button says 'Start' at the beginning, and says 'Restart' when the game ends. Pressing 'Start' begins the counter and the game if it's THE VERY FIRST GAME. Pressing 'Restart' begins the counter and the game for ALL CONSEQUENT GAMES -->
+			<button type='button' id='restart'>Start</button>
+		</div>
 	</body>
 </html>
