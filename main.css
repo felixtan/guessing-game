@@ -11,13 +11,44 @@ GENERAL
 html {
 	margin-left: 1em;
 	margin-right: 1em;
+	font-family: 'Lato', sans-serif;
+}
+
+/***************************
+TITLE
+***************************/
+#title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+
+/***************************
+RULES
+***************************/
+#rules {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+ul li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: 300;
 }
 
 /***************************
 GAME
 ***************************/
+#game {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 #status {
 	margin: 5px auto 5px 57px;
+	font-weight: 400;
 }
 
 input {
@@ -26,8 +57,9 @@ input {
 
 #guess-count {
 	margin: 5px auto 5px 57px;
+	font-weight: 400;
 }
 
-#restart {
+#restart-button {
 	margin: 5px auto 0 150px;
 }

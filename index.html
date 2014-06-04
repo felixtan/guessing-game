@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Guess The Number!</title>
     	<link rel="stylesheet" href="normalize.css">
+    	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     	<link rel="stylesheet" href="main.css">
 	</head>
 
@@ -29,7 +30,7 @@
 
 				<!-- TODO #1: Pressing the submit button pushes the guessed number to be analyzed by jQuery logic -->
 				<!-- <input type="submit" value="Submit"> 	button vs input?	-->
-				<button type='button'>Submit</button>
+				<button type='button' id='submmit-button'>Submit</button>
 			</form>
 
 			<!-- TODO: Implement counter for the number of guesses remaining... ranges from 0-6? or 1-6? -->
@@ -37,7 +38,7 @@
 		
 
 			<!-- TODO: Make it so that this button says 'Start' at the beginning, and says 'Restart' when the game ends. Pressing 'Start' begins the counter and the game if it's THE VERY FIRST GAME. Pressing 'Restart' begins the counter and the game for ALL CONSEQUENT GAMES -->
-			<button type='button' id='restart'>Start</button>
+			<button type='button' id='restart-button'>Start</button>
 		</div>
 	</body>
 </html>
