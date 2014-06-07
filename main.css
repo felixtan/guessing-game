@@ -63,3 +63,7 @@ input {
 #restart {
 	margin: 5px auto 0 150px;
 }
+
+#attempts {
+	font-weight: 700;
+}
