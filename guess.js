@@ -52,11 +52,17 @@ $(document).ready(function(){
 		if (counter <= 0)
 			$("#status").text("You lost! Try again!")
 
-		// restarting the game
-		//$('#restart').on("click", function() {
-		//	counter
 	});
 
+	//restarting the game
+	$("#restart").on("click", function() {
+		counter = 5;
+		random = Math.floor(100 * Math.random());
+		$("#status").text("Good luck! Have fun!")
+		$("#attempts").text(counter);
+		$("#answer").text(random);
+		$("#guess-value").val("");
+	});
 
 });
 
