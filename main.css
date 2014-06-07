@@ -47,21 +47,23 @@ GAME
 }
 
 #status {
-	margin: 5px auto 5px 57px;
+	margin: 5px 45px 5px 45px;
+	padding-left: 20px;
 	font-weight: 400;
 }
 
 input {
-	margin: 5px auto 5px 10px;
+	margin: 5px 10px 5px 30px;
 }
 
 #guess-count {
-	margin: 5px auto 5px 57px;
+	margin: 5px 85px 5px 50px;
+	padding-left: 10px;
 	font-weight: 400;
 }
 
 #restart {
-	margin: 5px auto 0 150px;
+	margin: 5px 150px 0 105px;
 }
 
 #attempts {
