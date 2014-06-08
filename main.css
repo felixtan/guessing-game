@@ -75,4 +75,12 @@ PREVIOUS LIST
 ***************************/
 #previous-list {
 	list-style: none;
+	margin-left: 20px;
+}
+
+#previous {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 55px;
+	margin-top: 50px;
 }
