@@ -69,3 +69,10 @@ input {
 #attempts {
 	font-weight: 700;
 }
+
+/***************************
+PREVIOUS LIST
+***************************/
+#previous-list {
+	list-style: none;
+}

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var guessText, guessNum, counter = 5, random = Math.floor(100 * Math.random()); 
+	var guessText, guessNum, counter = 5, win = false, random = Math.floor(100 * Math.random()); 
 
 	// print answer on the page for reference 
 	$("#answer").text(random);
@@ -18,10 +18,14 @@ $(document).ready(function(){
 			// logs current guess
 			$("#value").text(guessText);
 
-			// decrement number of attempts left
+			
 			if (counter > 0) {
+				// decrement number of attempts left
 				counter--;
 				$("#attempts").text(counter);
+
+				// logging previous guesses
+				$("#previous-list").prepend($("<li class='previous'>"+guessText+"</li>"));
 			}
 
 			// providing hints to the user
@@ -62,6 +66,7 @@ $(document).ready(function(){
 		$("#attempts").text(counter);
 		$("#answer").text(random);
 		$("#guess-value").val("");
+		$("#previous-list").remove();
 	});
 
 });
