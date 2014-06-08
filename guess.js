@@ -70,7 +70,7 @@ $(document).ready(function(){
 		$("#attempts").text(counter);
 		$("#answer").text(random);
 		$("#guess-value").val("");
-		$("#previous-list").remove();
+		$("#previous-list").empty();
 	});
 
 });
